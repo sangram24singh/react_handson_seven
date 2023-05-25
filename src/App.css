@@ -1,38 +1,62 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    background-image: linear-gradient(lightblue,hotpink,green);
+    height: 100vh;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+table{
+  font-size: x-large;
+  height: 550px;
+  padding: 5px;
+  background-color: white;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Nav-header{
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+  font-size: 30px;
+ 
+}
+a{
+  color: rgba(20, 20, 16, 0.701);
+}
+input{
+  text-align: center;
+  width:200px;
+  height:30px;
+  font-style: italic;
+  margin: 10px;
+}
+button{
+  background-color: rgb(31, 153, 184);
+  width: 120px;
+  height: 50px;
+  border: 5px solid white;
+  color: black;
+  font-size: 22px;
+  border-radius: 10px;
+  margin: 10px;
+}
+.Std-header{
+  display: flex;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+thead{
+  color:chocolate;
+  font-weight: bold;
+}
+.Nav-header a.active{
+  text-decoration: none;
+  color: rgb(23, 222, 63);
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
   }
-  to {
-    transform: rotate(360deg);
+  table{
+    font-size: 20px;
+    
   }
 }
